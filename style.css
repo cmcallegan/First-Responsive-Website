@@ -1,0 +1,80 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    display: grid;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "main main main"
+    "one two three";
+    background-color: #1b1b1b
+}
+
+main {
+    grid-area: main;
+    color: whitesmoke;
+    background-color: #2BCDC0;
+    text-align: center; 
+    padding: 12%;
+
+}
+
+.bar1 {
+    background-color:#33A8DD;
+    color: #33A8DD;
+}
+.bar2 {
+    background-color:#F46731;
+    color: #F46731;
+    }
+.bar3 {
+    background-color:#2BCDC0;
+    color: #2BCDC0;
+}
+
+.one {
+    text-align: center;
+    margin: 10% 25%; 
+    color: whitesmoke;
+}
+
+.two {
+    text-align: center; 
+    margin: 10% 25%; 
+    color: white; 
+}
+
+.three {
+    text-align: center; 
+    margin: 10% 25%;
+    color: white;
+}
+
+
+@media (min-width: 1px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-areas:
+            "main"
+            "one"
+            "two"
+            "three";
+      
+        
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "main main main"
+      "one two three";
+     }
+     
+}
